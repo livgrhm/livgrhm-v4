@@ -3,6 +3,8 @@
 body {
   color: $brand-text-color;
   background-color: $brand-bg-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {

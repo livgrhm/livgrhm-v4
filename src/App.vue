@@ -1,33 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <page-layout>
+      <nav-bar slot="head" />
+      <router-view />
+      <page-footer slot="bottom" />
+    </page-layout>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue';
+import NavBar from '@/components/NavBar.vue';
+import PageLayout from '@/components/PageLayout.vue';
+import PageFooter from '@/components/PageFooter.vue';
+
+export default Vue.extend({
+  name: 'App',
+  components: { PageLayout, NavBar, PageFooter },
+});
+</script>
 
 <style lang="scss">
 @import './styles/global';
 @import './styles/reset';
 @import './styles/typography';
-
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  /*color: #2c3e50;*/
-}
-
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>

@@ -40,6 +40,9 @@ h1 {
   font-weight: $font-weight-h1;
   letter-spacing: $letter-spacing-h1;
   line-height: $line-height-h1;
+  margin-bottom: $space-24;
+  text-decoration: underline;
+  text-decoration-color: $brand-primary;
 }
 
 h2 {
@@ -47,6 +50,7 @@ h2 {
   font-weight: $font-weight-h2;
   letter-spacing: $letter-spacing-h2;
   line-height: $line-height-h2;
+  margin-bottom: $space-20;
 }
 
 h3 {
