@@ -13,6 +13,10 @@ body {
   font-display: swap;
 }
 
+::selection {
+  background-color: $brand-bg-color-variant;
+}
+
 small {
   font-size: $font-size-small;
 }
@@ -24,6 +28,7 @@ strong {
 a {
   color: $brand-link-color;
   font-weight: $link-font-weight;
+  text-decoration: none;
 
   &:hover {
     color: $brand-link-hover-color;

@@ -1,15 +1,15 @@
 export default {
-  name: 'typography',
+    name: 'typography',
 
-  data() {
-    return {
-      divStyles: {
-        padding: '1.6rem',
-      },
-    };
-  },
+    data() {
+        return {
+            divStyles: {
+                padding: '1.6rem',
+            },
+        };
+    },
 
-  template: `
+    template: `
     <div :style="divStyles">
       <h1>Typography</h1>
       <p>This document demonstrates the typography and usage within the design system.</p>
