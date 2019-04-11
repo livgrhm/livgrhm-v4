@@ -29,6 +29,7 @@ a {
   color: $brand-link-color;
   font-weight: $link-font-weight;
   text-decoration: none;
+  transition: color 0.25s ease-in;
 
   &:hover {
     color: $brand-link-hover-color;
