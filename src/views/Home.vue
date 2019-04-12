@@ -24,7 +24,7 @@ export default Vue.extend({
 @import '../styles/brand';
 
 .home {
-  padding-top: -$space-48;
+  margin-top: $space-32;
   /*background: url('../assets/landing-photo-experiment-1.jpg');
   background-size: cover;
   background-position-x: -40rem;

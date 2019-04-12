@@ -1,8 +1,8 @@
 <template>
-  <div id="nav">
+  <nav id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
+  </nav>
 </template>
 
 <script lang="ts">
@@ -20,6 +20,9 @@ export default Vue.extend({
   display: flex;
   justify-content: flex-end;
   padding: $space-32;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 
   a {
     font-weight: bold;

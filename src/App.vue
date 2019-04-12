@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <page-layout>
-      <nav-bar slot="head" />
+      <!--<nav-bar slot="head" />-->
       <router-view />
       <page-footer slot="bottom" />
     </page-layout>
@@ -21,7 +21,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@import './styles/global';
 @import './styles/reset';
+@import './styles/global';
 @import './styles/typography';
 </style>
